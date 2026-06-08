@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Jung Il-jae</title>
+    <meta
+      name="description"
+      content="정일재의 이메일, GitHub, 기술 블로그 연락 페이지"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animations.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="cursor" aria-hidden="true"></div>
+
+    <header class="nav-container">
+      <nav class="nav-content" aria-label="Primary navigation">
+        <div class="logo">
+          <a href="index.html">ILJAE</a>
+        </div>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="메뉴 열기"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="contact-main">
+      <section class="contact-hero">
+        <div class="container contact-layout">
+          <div>
+            <p class="eyebrow reveal-text">Contact</p>
+            <h1 class="large-title reveal-text delay-1">
+              Let's build something secure together.
+            </h1>
+          </div>
+
+          <div class="contact-panel reveal-text delay-2">
+            <button
+              class="copy-email"
+              type="button"
+              data-copy="92518388@joongbu.ac.kr"
+            >
+              <span>School Email</span>
+              <strong>92518388@joongbu.ac.kr</strong>
+              <small>Click to copy</small>
+            </button>
+            <ul class="social-links">
+              <li>
+                <a href="https://github.com/iljae627" target="_blank" rel="noreferrer"
+                  >GitHub</a
+                >
+              </li>
+              <li>
+                <a href="https://iljae627.github.io/" target="_blank" rel="noreferrer"
+                  >Git Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://blog.naver.com/iljae627"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Naver Blog</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-container">
+      <div class="container footer-content">
+        <p>Based in Goyang-si, South Korea.</p>
+        <a href="index.html">Home</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Jung Il-jae</title>
+    <meta
+      name="description"
+      content="정보보안을 공부하는 정일재의 소개, 기술 스택, 학력과 수상 기록"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animations.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="cursor" aria-hidden="true"></div>
+
+    <header class="nav-container">
+      <nav class="nav-content" aria-label="Primary navigation">
+        <div class="logo"><a href="index.html">ILJAE</a></div>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="메뉴 열기"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="about-main">
+      <section class="page-hero">
+        <div class="container page-grid">
+          <h1 class="large-title reveal-text">Exploring the Invisibles.</h1>
+          <div class="page-description reveal-text delay-1">
+            <p>
+              안녕하세요, 중부대학교에서 정보보안을 전공하고 있는 정일재입니다.
+              시스템의 흔적을 분석하고 취약점을 재현하며, 안전한 구조를 고민하는
+              과정에 흥미를 느낍니다.
+            </p>
+            <p>
+              결과보다 과정을 중요하게 생각합니다. 문제를 발견하고, 가설을
+              세우고, 근거를 남기며 끝까지 해결하는 사람으로 성장하고 있습니다.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="profile-section">
+        <div class="container profile-grid reveal-text delay-2">
+          <div class="profile-card">
+            <span>Current Focus</span>
+            <strong>Digital Forensics</strong>
+            <p>파일 시스템, 로그, 메모리 흔적을 바탕으로 사건의 흐름을 복원합니다.</p>
+          </div>
+          <div class="profile-card">
+            <span>Core Practice</span>
+            <strong>Pwnable</strong>
+            <p>취약점 원리를 실습하며 시스템 내부 동작과 보호 기법을 이해합니다.</p>
+          </div>
+          <div class="profile-card">
+            <span>Build Skill</span>
+            <strong>Python / C / Web</strong>
+            <p>분석 자동화와 웹 인터페이스 구현을 함께 연습합니다.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="timeline-section">
+        <div class="container">
+          <div class="timeline-item reveal-text">
+            <span class="year">2026 - Present</span>
+            <div>
+              <h2>Joongbu University</h2>
+              <p>Information Security, Sophomore (2학년 재학 중)</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal-text">
+            <span class="year">2025</span>
+            <div>
+              <h2>Network Manager Level 2</h2>
+              <p>Certified by ICQA (네트워크관리사 2급 자격 취득)</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal-text">
+            <span class="year">2021</span>
+            <div>
+              <h2>DSA-CS 2021 Korea</h2>
+              <p>Hold by Korea Joongang Daily (장려상)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-container">
+      <div class="container footer-content">
+        <p>&copy; 2026 Jung Il-jae. All rights reserved.</p>
+        <a href="work.html">Work</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

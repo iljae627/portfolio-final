@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Work | Jung Il-jae</title>
+    <meta
+      name="description"
+      content="정일재의 보안 학습 기록, 포렌식 리포트, 시스템 해킹 프로젝트"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animations.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="cursor" aria-hidden="true"></div>
+
+    <header class="nav-container">
+      <nav class="nav-content" aria-label="Primary navigation">
+        <div class="logo"><a href="index.html">ILJAE</a></div>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="메뉴 열기"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="work.html" class="active">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="work-main">
+      <section class="page-hero">
+        <div class="container page-grid">
+          <h1 class="large-title reveal-text">Archives & Insights.</h1>
+          <div class="page-description reveal-text delay-1">
+            <p>
+              문제를 어떻게 분석했고, 어떤 근거로 해결했는지를 남기는 보안
+              아카이브입니다.
+            </p>
+            <p>
+              필터를 눌러 포렌식, 시스템 해킹, 개발 기록을 빠르게 나눠볼 수
+              있습니다.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="work-browser">
+        <div class="container">
+          <div class="filter-bar reveal-text" aria-label="Project filters">
+            <button class="filter-button active" type="button" data-filter="all">
+              All
+            </button>
+            <button class="filter-button" type="button" data-filter="forensics">
+              Forensics
+            </button>
+            <button class="filter-button" type="button" data-filter="pwnable">
+              Pwnable
+            </button>
+            <button class="filter-button" type="button" data-filter="dev">
+              Dev
+            </button>
+          </div>
+
+          <div id="work-list" class="work-list" aria-live="polite">
+            <p class="muted">프로젝트를 불러오는 중입니다.</p>
+          </div>
+
+          <a
+            href="https://iljae627.github.io/"
+            target="_blank"
+            rel="noreferrer"
+            class="archive-link reveal-text"
+          >
+            <span>Visit Technical Archive</span>
+            <strong>iljae627.github.io</strong>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-container">
+      <div class="container footer-content">
+        <p>&copy; 2026 Jung Il-jae. All rights reserved.</p>
+        <a href="contact.html">Contact</a>
+      </div>
+    </footer>
+
+    <script src="project-data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
