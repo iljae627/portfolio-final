@@ -6,7 +6,7 @@
     <title>Jung Il-jae | Security Portfolio</title>
     <meta
       name="description"
-      content="디지털 포렌식과 시스템 해킹을 공부하는 정일재의 보안 포트폴리오"
+      content="디지털 포렌식을 공부하는 정일재의 보안 포트폴리오"
     />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,7 +17,6 @@
     />
 
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="animations.css" />
   </head>
   <body>
     <div class="scroll-progress" aria-hidden="true"></div>
@@ -50,13 +49,15 @@
       <section id="hero" class="hero-wrapper">
         <div class="container hero-layout">
           <div class="hero-copy">
-            <span class="eyebrow reveal-text">Digital Forensics / Pwnable</span>
+            <span class="eyebrow reveal-text"
+              >Digital Forensics / Security</span
+            >
             <h1 class="hero-title reveal-text delay-1">
-              시스템의 흔적을 읽고, 취약점을 증명하는 보안 학습자.
+              시스템의 흔적을 읽고, 안전을 분석하는 보안 학습자.
             </h1>
             <p class="hero-subtitle reveal-text delay-2">
-              중부대학교 정보보안 전공 정일재입니다. 포렌식, 시스템 해킹,
-              네트워크와 클라우드 기반 보안을 꾸준히 기록하고 실험합니다.
+              중부대학교 정보보안 전공 정일재입니다. 포렌식, 네트워크와 클라우드
+              기반 보안을 꾸준히 기록하고 실험합니다.
             </p>
             <div class="hero-actions reveal-text delay-3">
               <a class="button primary" href="work.html">프로젝트 보기</a>
@@ -64,10 +65,13 @@
             </div>
           </div>
 
-          <aside class="signal-panel reveal-text delay-2" aria-label="Profile summary">
+          <aside
+            class="signal-panel reveal-text delay-2"
+            aria-label="Profile summary"
+          >
             <div class="signal-line">
               <span>Focus</span>
-              <strong>Forensics, Pwnable</strong>
+              <strong>Digital Forensics</strong>
             </div>
             <div class="signal-line">
               <span>Base</span>
@@ -84,7 +88,7 @@
       <section class="stats-section">
         <div class="container stats-grid reveal-text">
           <div>
-            <strong data-count="3">0</strong>
+            <strong data-count="2">0</strong>
             <span>Security Fields</span>
           </div>
           <div>
@@ -104,7 +108,11 @@
             <span class="section-label">Featured Work</span>
             <a href="work.html" class="inline-link">전체 보기</a>
           </div>
-          <div id="featured-list" class="featured-grid" aria-live="polite"></div>
+          <div
+            id="featured-list"
+            class="featured-grid"
+            aria-live="polite"
+          ></div>
         </div>
       </section>
     </main>
@@ -118,7 +126,6 @@
       </div>
     </footer>
 
-    <script src="project-data.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

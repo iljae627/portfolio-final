@@ -1,3 +1,41 @@
+// --- 기존 project-data.js 내용 통합 (Pwnable 삭제 완료) ---
+const projects = [
+  {
+    title: 'Digital Forensics Notes',
+    year: '2026',
+    category: 'forensics',
+    role: 'Analysis / Write-up',
+    summary:
+      '파일, 로그, 타임라인을 바탕으로 증거 흐름을 정리하는 포렌식 학습 기록입니다.',
+    tags: ['Forensics', 'Timeline', 'Report'],
+    link: 'https://iljae627.github.io/',
+    featured: true,
+  },
+  {
+    title: 'Security Portfolio Website',
+    year: '2026',
+    category: 'dev',
+    role: 'Frontend',
+    summary:
+      'HTML, CSS, JavaScript로 만든 개인 포트폴리오 웹사이트입니다. 프로젝트 필터와 인터랙션을 포함합니다.',
+    tags: ['HTML', 'CSS', 'JavaScript'],
+    link: 'https://wep-final-fin.vercel.app/',
+    featured: true,
+  },
+  {
+    title: 'Network Manager Study',
+    year: '2025',
+    category: 'forensics',
+    role: 'Certificate Study',
+    summary:
+      '네트워크관리사 2급 취득 과정에서 정리한 네트워크 기초와 운영 지식입니다.',
+    tags: ['Network', 'ICQA', 'Study'],
+    link: 'about.html',
+    featured: false,
+  },
+]
+
+// --- 기존 script.js 내용 ---
 document.addEventListener('DOMContentLoaded', () => {
   const body = document.body
   const cursor = document.querySelector('.cursor')
@@ -45,8 +83,12 @@ function setupCursor(cursor) {
   document
     .querySelectorAll('a, button, .project-card, .work-item')
     .forEach((element) => {
-      element.addEventListener('mouseenter', () => cursor.classList.add('is-active'))
-      element.addEventListener('mouseleave', () => cursor.classList.remove('is-active'))
+      element.addEventListener('mouseenter', () =>
+        cursor.classList.add('is-active'),
+      )
+      element.addEventListener('mouseleave', () =>
+        cursor.classList.remove('is-active'),
+      )
     })
 }
 
@@ -71,8 +113,10 @@ function setupScrollProgress(progress) {
   if (!progress) return
 
   const updateProgress = () => {
-    const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight
-    const progressWidth = scrollableHeight > 0 ? (window.scrollY / scrollableHeight) * 100 : 0
+    const scrollableHeight =
+      document.documentElement.scrollHeight - window.innerHeight
+    const progressWidth =
+      scrollableHeight > 0 ? (window.scrollY / scrollableHeight) * 100 : 0
     progress.style.width = `${Math.min(progressWidth, 100)}%`
   }
 
@@ -107,7 +151,9 @@ function renderWorkProjects(observer) {
   const workList = document.getElementById('work-list')
   if (!workList) return
 
-  workList.innerHTML = projects.map((project) => createWorkItem(project)).join('')
+  workList.innerHTML = projects
+    .map((project) => createWorkItem(project))
+    .join('')
 
   workList
     .querySelectorAll('.reveal-text')
@@ -150,7 +196,9 @@ function createProjectCard(project) {
 }
 
 function createWorkItem(project) {
-  const tags = project.tags.map((tag) => `<span class="tag">${tag}</span>`).join('')
+  const tags = project.tags
+    .map((tag) => `<span class="tag">${tag}</span>`)
+    .join('')
 
   return `
     <article class="work-item reveal-text" data-category="${project.category}">
@@ -177,7 +225,9 @@ function setupCounters(observer) {
 
   counters.forEach((counter) => {
     observer.observe(counter)
-    counter.addEventListener('reveal', () => animateCounter(counter), { once: true })
+    counter.addEventListener('reveal', () => animateCounter(counter), {
+      once: true,
+    })
   })
 }
 
